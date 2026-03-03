@@ -11,7 +11,7 @@ export function Resume() {
     {
       title: "Languages",
       icon: Code,
-      skills: ["Java", "Python", "C", "JavaScript", "TypeScript"]
+      skills: ["Java", "C", "JavaScript", "TypeScript","HTML","CSS"]
     },
     {
       title: "Concepts",
@@ -31,7 +31,7 @@ export function Resume() {
     {
       title: "Backend",
       icon: Server,
-      skills: ["Node.js", "Express", "Flask", "RESTful APIs"]
+      skills: ["Node.js", "Express", "Flask", "RESTful APIs","GIT" ,"GITHUB" ,"POSTMAN"]
     }
   ];
 
@@ -61,6 +61,12 @@ export function Resume() {
               color: 'white',
               boxShadow: '0 4px 6px var(--soft-shadow)'
             }}
+            onClick={() => {
+  const link = document.createElement("a");
+  link.href = "/Harshita-Chabaria-Resume.pdf";
+  link.download = "Harshita-Chabaria-Resume.pdf";
+  link.click();
+}}
           >
             <Download size={20} />
             Download Resume
@@ -147,10 +153,10 @@ export function Resume() {
                 style={{ backgroundColor: 'var(--soft-cream)' }}
               >
                 <h3 className="text-xl mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
-                  Bachelor of Science in Computer Science
+                  Bachelor of Technology in Computer Science(CCVT)
                 </h3>
-                <p className="opacity-70 mb-2">University Name</p>
-                <p className="opacity-60">Expected Graduation: 2026</p>
+                <p className="opacity-70 mb-2">UPES,DEHRADUN</p>
+                <p className="opacity-60">Expected Graduation: 2027</p>
               </div>
             </div>
 
@@ -168,15 +174,16 @@ export function Resume() {
               >
                 <div>
                   <h3 className="text-lg mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
-                    AWS Cloud Practitioner
+                    AWS Cloud Architecture
                   </h3>
+  
                   <p className="opacity-60 text-sm">Amazon Web Services</p>
                 </div>
                 <div>
                   <h3 className="text-lg mb-1" style={{ fontFamily: 'var(--font-heading)' }}>
-                    Data Structures & Algorithms
+                    The Complete Web Development Bootcamp
                   </h3>
-                  <p className="opacity-60 text-sm">Online Course Certification</p>
+                  <p className="opacity-60 text-sm">Udemy</p>
                 </div>
               </div>
             </div>
